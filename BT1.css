@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Toàn trang */
+body {
+  background: #f4f7fb;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Khung form */
+.Head {
+  margin: 40px auto;
+  width: 50%;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Nội dung */
+.content {
+  padding: 30px;
+}
+
+/* Tiêu đề */
+.intro {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form */
+.form_contact {
+  width: 100%;
+  display: block;
+}
+
+.form_contact--info {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Input chung */
+input,
+textarea {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Subject */
+.subject {
+  margin: 20px 0;
+}
+
+/* Họ tên + Email */
+.full_name,
+.email {
+  width: 50%;
+}
+
+/* Message */
+#message {
+  height: 160px;
+  resize: none;
+  padding-top: 10px;
+}
+
+/* Submit */
+.submit_form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.submit_form button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border: none;
+  padding: 12px 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit_form button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.submit_form p {
+  font-size: 16px;
+  color: #64748b;
+}

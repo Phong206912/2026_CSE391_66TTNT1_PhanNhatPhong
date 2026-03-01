@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Source Code Pro", monospace;
+  background: #f6f8fb;
+  color: #2f2f2f;
+}
+
+/* wrapper */
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 80px 40px 100px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+}
+
+/* title */
+h1 {
+  font-size: 34px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 70px;
+}
+
+/* grid */
+.grid {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* card */
+.card {
+  width: 330px;
+  background: linear-gradient(180deg, #ffffff, #f9fafb);
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  padding: 46px 38px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* card title */
+.card h2 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* card text */
+.card p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #6b7280;
+  margin-bottom: 40px;
+}
+
+/* profile */
+.name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.role {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+/* content */
+.content {
+  flex: 1;
+  max-width: 640px;
+}
+
+.content p {
+  font-size: 13px;
+  line-height: 2;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.content p strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .grid {
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .wrap {
+    padding: 60px 22px 80px;
+  }
+
+  h1 {
+    margin-bottom: 45px;
+    font-size: 30px;
+  }
+}
