@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body style="margin: 0px; padding: 0px">
+    <div class="main_body">
+      <h1>Basic Info</h1>
+      <hr />
+      <table id="Employee">
+        <tr>
+          <td>Employee ID</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" placeholder="First_Name" /></td>
+        </tr>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" placeholder="First_Name" /></td>
+        </tr>
+        <tr>
+          <td>Gender</td>
+          <td colspan="4">
+            <input type="radio" name="gender" value="Male" id="male" />
+            <label for="male">Male</label><br />
+            <input type="radio" name="gender" value="Female" id="female" />
+            <label for="female">Female</label><br />
+
+            <input type="radio" name="gender" value="XXX" id="xxx" />
+            <label for="xxx">XXX</label><br />
+            <input type="radio" name="gender" value="ZZZ" id="zzz" />
+            <label for="zzz">ZZZ</label><br />
+          </td>
+        </tr>
+        <tr>
+          <td>Title</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Suffid</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>BirthDate</td>
+          <td><input type="date" placeholder="yyyy-mm-dd 00:00:00" /></td>
+        </tr>
+        <tr>
+          <td>HireDate</td>
+          <td><input type="date" placeholder="yyyy-mm-dd 00:00:00" /></td>
+        </tr>
+        <tr>
+          <td>SSN# (if applicable)</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Reports To</td>
+          <td>
+            <select name="reports" id="report">
+              <option value="Buchanan">Buchannan</option>
+              <option value="kjak">kjak</option>
+              <option value="yyykd">Yyykd</option>
+              <option value="abd">Abd</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <p>Contact Infor</p>
+      <hr />
+      <table id="contact_info">
+        <tr>
+          <td>Email</td>
+          <td><input type="email" placeholder="name@gmail.com" /></td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Region</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Postal Code</td>
+          <td><input type="date" placeholder="yyyy-mm-dd 00:00:00" /></td>
+        </tr>
+        <tr>
+          <td>Contry</td>
+          <td>
+            <select name="contry" id="contry">
+              <option value="vietnam">VietNam</option>
+              <option value="Amarica">Usa</option>
+              <option value="China">China</option>
+              <option value="Korea">Korea</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>US Home Phone</td>
+          <td>
+            <input type="tel" />
+          </td>
+        </tr>
+        <tr>
+          <td>Photo</td>
+          <td>
+            <input type="url" />
+          </td>
+        </tr>
+      </table>
+      <p>Option Info</p>
+      <hr />
+      <table id="Option_info">
+        <tr>
+          <td>Notes</td>
+          <td>
+            <textarea name="note" id="note"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Prefered Shift</td>
+          <td>
+            <input type="checkbox" name="preferred_Shift" id="regular" />
+            <label for="regular">Regular</label><br />
+
+            <input type="checkbox" name="preferred_Shift" id="gravy" />
+            <label for="gravy">Gravy Yard</label><br />
+          </td>
+        </tr>
+        <tr>
+          <td>Active?</td>
+          <td><input type="checkbox" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <p>TIDAWO</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Are you human?</td>
+          <td>
+            <label for="change">Click to change</label><br />
+            <input type="text" class="input_human" />
+          </td>
+        </tr>
+      </table>
+      <hr />
+
+      <div class="bottom">
+        <div class="contain_bottem">
+          <div class="left_bottem">
+            <button type="button" class="btn-outline">◀ Prev</button>
+            <button type="button" class="btn-outline">Next ▶</button>
+          </div>
+
+          <div class="right_bottem">
+            <button type="submit" class="btn-primary">V Submit</button>
+            <button type="button" class="btn-outline">x Cancel</button>
+          </div>
+        </div>
+
+        <p class="required">* required</p>
+      </div>
+    </div>
+  </body>
+</html>
