@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1.1 - Quản Lý Điểm Sinh Viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Quản Lý Điểm Sinh Viên</h2>
+        
+        <div class="input-section">
+            <input type="text" id="txtName" placeholder="Nhập họ và tên sinh viên...">
+            <input type="number" id="txtGrade" placeholder="Nhập điểm (0 - 10)" min="0" max="10" step="0.1">
+            <button id="btnAdd">Thêm</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ Tên</th>
+                    <th>Điểm</th>
+                    <th>Xếp loại</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="studentTbody">
+                </tbody>
+        </table>
+
+        <div class="stats-section">
+            <p>Tổng số sinh viên: <strong id="totalStudents">0</strong></p>
+            <p>Điểm trung bình lớp: <strong id="averageGrade">0.0</strong></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <form action="" class="qlsv">
+        <div class="nhapvatimkiem">
+            <div class="nhaplieu">
+                <input type="text" id="input_hoten" name="hoten" placeholder="Nhap ho va ten">
+                <input type="text" id="input_diem" name="diem" placeholder="Nhap diem">
+                <button type="submit" id="Addbtn">Them</button>
+            </div>
+
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Tim kiem sinh vien theo ho ten...">
+            </div>
+
+            <div class="loc">
+                <label for="locxeploai">Loc theo xep loai:</label>
+                <select id="locxeploai">
+                    <option value="tatca">Tat ca</option>
+                    <option value="Gioi">Gioi</option>
+                    <option value="Kha">Kha</option>
+                    <option value="Trung binh">Trung binh</option>
+                    <option value="Yeu">Yeu</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="danhsachsv">
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ và tên</th>
+                        <th id="diem">Điểm</th>
+                        <th>Xep Loai</th>
+                        <th colspan="2">Thao Tac</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+        <div class="thongke">
+            <p id="tongsv">Tong so sinh vien: 0</p>
+            <p id="diemtb">Diem trung binh: 0</p>
+        </div>
+   </form>
+   <div id="bai2">
+    <form id="register">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username">
+      <span class="error" id="usernameError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+      <span class="error" id="emailError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="sdt">Số điện thoại</label>
+      <input type="text" id="sdt" name="sdt">
+      <span class="error" id="sdtError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Mật khẩu</label>
+      <input type="password" id="password" name="password">
+      <span class="error" id="passwordError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Nhập lại mật khẩu</label>
+      <input type="password" id="confirmPassword" name="confirmPassword">
+      <span class="error" id="confirmPasswordError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="gioitinh">Giới tính</label>
+      <select id="gioitinh" name="gioitinh">
+        <option value="">-- Chọn giới tính --</option>
+        <option value="1">Nam</option>
+        <option value="0">Nữ</option>
+      </select>
+      <span class="error" id="gioitinhError"></span>
+    </div>
+
+    <div class="form-group checkbox-group">
+      <input type="checkbox" id="dieukhoan" name="dieukhoan">
+      <label for="dieukhoan" style="display:inline; font-weight:normal;">
+        Tôi đồng ý điều khoản
+      </label>
+      <span class="error" id="dieukhoanError"></span>
+    </div>
+
+    <button type="submit" id="submit_register">Đăng ký</button>
+  </form>
+
+   </div>
+
+   <script src="script.js"></script>
+</body>
+</html>

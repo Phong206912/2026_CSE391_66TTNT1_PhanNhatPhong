@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đặt Hàng</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h2>Form Đặt Hàng</h2>
+
+<form id="orderForm">
+
+<div class="form-group">
+<label>Tên sản phẩm</label><br>
+<select id="product">
+<option value="">-- Chọn sản phẩm --</option>
+<option value="ao">Áo</option>
+<option value="quan">Quần</option>
+<option value="giay">Giày</option>
+</select>
+<div class="error" id="productError"></div>
+</div>
+
+<div class="form-group">
+<label>Số lượng</label><br>
+<input type="number" id="quantity" min="1" max="99">
+<div class="error" id="quantityError"></div>
+</div>
+
+<div class="form-group">
+<label>Ngày giao hàng</label><br>
+<input type="date" id="deliveryDate">
+<div class="error" id="dateError"></div>
+</div>
+
+<div class="form-group">
+<label>Địa chỉ giao</label><br>
+<input type="text" id="address">
+<div class="error" id="addressError"></div>
+</div>
+
+<div class="form-group">
+<label>Ghi chú</label><br>
+<textarea id="note"></textarea><br>
+<span id="noteCount">0/200</span>
+<div class="error" id="noteError"></div>
+</div>
+
+<div class="form-group">
+<label>Phương thức thanh toán</label><br>
+
+<label><input type="radio" name="payment" value="COD"> COD</label>
+<label><input type="radio" name="payment" value="bank"> Chuyển khoản</label>
+<label><input type="radio" name="payment" value="wallet"> Ví điện tử</label>
+
+<div class="error" id="paymentError"></div>
+</div>
+
+<h3>Tổng tiền: <span id="total">0</span> VND</h3>
+
+<button type="submit">Đặt hàng</button>
+
+</form>
+
+<div id="confirmBox">
+
+<h3>Xác nhận đơn hàng</h3>
+
+<p id="summary"></p>
+
+<button id="confirmBtn">Xác nhận</button>
+<button id="cancelBtn">Hủy</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
